@@ -3,23 +3,384 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> GRD 311 - Web & Multimedia 1 </title>
+    <title>Ford Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0%;
+            width: 100%;
+            font-family: "Bebas Neue";
+            letter-spacing: 1px; 
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background-image:
+                url("img/hero_background.png.png");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            padding-top: 30px;
+            gap: 40px;
+            margin-left: 60px;
+        }
+
+        .nav-icons {
+            display: flex;
+            gap: 20px;
+            padding-top: 30px;
+            padding-right: 30px;
+            margin-left: auto;
+        }
+
+        .info {
+            position: absolute;
+            left:2%;
+            bottom: 8%;
+        }
+
+        .year {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .info h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .price {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 4px 0 4px;
+        }
+
+        .details {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 50px;
+            text-decoration-line: underline;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .buttons a {
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .button-one {
+            background-color: white;
+            color: #222;
+        }
+
+        .button-two {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .content {
+           
+            width: 100%;
+            height: 100vh;
+            position: relative;
+             background-image: url(img/find-the-right-ride_bg.png);
+             background-repeat: no-repeat;
+             background-size: contain;
+             background-position-y: 175px; 
+                
+        }
+
+        .ride {
+            font-size: 48px;
+            margin-bottom: 0px;
+            margin-left: 120px;
+            margin-top: 60px; 
+        }
+
+        .options {
+            font-size: 26px;
+            margin-top: -5px;
+            margin-left: 120px;
+        }
+
+        .jelly-bean-cont {
+            width: 100%;
+            position:relative;
+            top:170px;
+            display: flex;
+        }
+
+        .jelly-bean-desc{
+            width:280px;
+            padding:15px;
+            padding-bottom: 25px;
+            margin-left: 40px;
+            font-weight: normal;
+        }
+
+        .jelly-bean-desc {
+            background-color: #efefef;
+        }
+
+        .jelly-bean-heading-one{
+            margin-top: 10px;
+            font-weight: normal;
+            font-size: 26px;
+        }
+
+        .jelly-bean-heading-two{
+            margin-top: -25px;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        .buil_btn {
+            width:168px;
+            min-height:40px;
+            margin-top:50px;
+            background-color: #0276b3;
+            border-radius: 25px;
+            color:white;
+            text-align: center;
+            line-height: 40px;
+            text-decoration:none
+        }
+
+    </style>
+
 </head>
-<body> 
 
-    <h1>GRD 311 | Design for Multimedia 1</h1>
-    
-    <!-- This is a comment -->
-    
-    <h2>List of assignments</h2>
+<body>
 
-    <ul>
-        <li><a href="week_01/index.html">Week 1</a></li>
-        <li><a href="week_02/index.html">Week 2</a></li>
-        <li><a href="week_04/index.html">Week 4</a></li>
-        <li><a href="week_06/index.html">Week 6</a></li>
-        <li><a href="week_07/index.html">Week 7</a></li>
-    </ul>
+    <header class="hero">
+
+        <nav class="navbar">
+
+            <div>
+
+                <img src="img/FordOval.svg.png" alt="Ford Logo Oval" style="padding-left: 30px; padding-top: 30px;">
+
+            </div>
+
+            <div class="nav-links">
+
+                <a href="empty">Vehicles</a>
+                <a href="empty">Shop</a>
+                <a href="empty">Support & Service</a>
+                <a href="empty">Ford Pro Solutions</a>
+
+            </div>
+
+            <div class="nav-icons">
+
+                <a href="empty"><img src="img/search-v2-white.png" alt="Search Icon"></a>
+                <a href="empty"><img src="img/location-outline-v2-white.png" alt="Map/ Location Icon"></a> 
+                LOCATE DEALER
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/account-outline-v2-white.png" alt="Person Icon"></a>
+                <a href="empty"><img src="img/globe-v2-white.png" alt="Globe Icon"></a>
+                
+            </div>
+
+        </nav>
+
+        <div class="info">
+
+            <p class="year">
+
+                2026
+
+            </p>
+
+            <h2>ESCAPE<sup>®</sup></h2>
+
+            <p class="price">
+
+                STARTING AT $30,350<sup>1</sup>
+
+            </p>
+
+            <p class="details">
+
+                DETAILS
+            
+            </p>
+
+            <div class="buttons">
+                
+                <a href="empty" class="button-one">
+
+                    SEARCH INVENTORY
+
+                </a>
+
+                <a href="empty" class="button-two">
+
+                    2026 ESCAPE
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="content">
+                
+            <p class="ride">FIND THE RIGHT RIDE FOR YOUR ROAD</p>
+
+            <p class="options">4 OPTIONS TO MAKE YOUR MOVE.</p>
+
+                <div class="jelly-bean-cont">
+
+                    <div class="jelly-bean">
+                                
+                        <img src="img/Escape® Plug-in Hybrid.png" width="375px" alt="Blue Escape Hybrid">
+                                
+                        <div class="jelly-bean-desc">
+                                    
+                            <h2 class="jelly-bean-heading-one">ESCAPE<sup>®</sup> PLUG-IN HYBRID</h2>
+
+                            <h3 class="jelly-bean-heading-two">STARTING AT $35,400<sup>1</sup></h3>
+
+                                <ul>
+                                    <li>2.5L IVCT ATKINSON CYCLE 1-4 HYBRID ENGINE</li>
+                                    <li>STANDARD FRONT-WHEEL DRIVE</li>
+                                    <li>13.2 CENTER DISPLAY</li>
+                                    <li>101 EPA EST. MPGE (COMBINED)</li>
+                                </ul>
+
+                            <div class="buil_btn">
+                                    
+                                <a href="empty" class="buil_btn">BUILD & PRICE</a>
+                                    
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="jelly-bean">
+                                
+                        <img src="img/Escape Active®.png" width="375px" alt="White Escape Active">
+                                
+                        <div class="jelly-bean-desc">
+                                
+                            <h2 class="jelly-bean-heading-one">ESCAPE<sup>®</sup> ACTIVE</h2>
+                                
+                            <h3 class="jelly-bean-heading-two">STARTING AT $30,350 <sup>1</sup></h3>
+
+                                <ul>
+                                    <li>2.5 IVCT ATKINSON CYCLE 1-4 HYBRID ENGINE</li>
+                                    <li>STANDARD FRONT-WHEEL DRIVE</li>
+                                    <li>13.2" CENTER DISPLAY</li>
+                                    <li>101 EPA-EST. MPGE (COMBINED)</li>
+                                </ul>
+
+                            <div class="buil_btn">
+
+                                <a href="empty" class="buil_btn">BUILD & PRICE</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="jelly-bean">
+                                
+                        <img src="img/Escape® ST-Line.png" width="375px" alt="Silver Escape St-Line">
+                                
+                        <div class="jelly-bean-desc">
+                                    
+                            <h2 class="jelly-bean-heading-one">ESCAPE<sup>®</sup> ST-LINE</h2>
+                                    
+                            <h3 class="jelly-bean-heading-two">STARTING AT $31,195<sup>1</sup></h3>
+                                        
+                                <ul>
+                                    <li>2.5 IVCT ATKINSON CYCLE 1-4 HYBRID ENGINE</li>
+                                    <li>STANDARD FRONT-WHEEL DRIVE</li>
+                                    <li>13.2" CENTER DISPLAY</li>
+                                    <li>101 EPA-EST. MPGE (COMBINED)</li>
+                                </ul>
+
+                            <div class="buil_btn">
+                                        
+                                <a href="empty" class="buil_btn">BUILD & PRICE</a>
+                                    
+                            </div>
+
+                        </div>
+                            
+                    </div>
+
+                    <div class="jelly-bean">
+                                
+                        <img src="img/Escape® Platinum™.png" width="375px" alt="Red Escape Platinum">
+                                
+                        <div class="jelly-bean-desc">
+                                
+                            <h2 class="jelly-bean-heading-one">ESCAPE<sup>®</sup> PLATINUM<sup>TM</sup></h2>
+                                    
+                            <h3 class="jelly-bean-heading-two">STARTING AT $37,940<sup>1</sup></h3>
+                                        
+                                <ul>
+                                    <li>2.5 IVCT ATKINSON CYCLE 1-4 HYBRID ENGINE</li>
+                                    <li>STANDARD FRONT-WHEEL DRIVE</li>
+                                    <li>13.2" CENTER DISPLAY</li>
+                                    <li>101 EPA-EST. MPGE (COMBINED)</li>
+                                </ul>
+
+                            <div class="buil_btn">
+                                        
+                                <a href="empty" class="buil_btn">BUILD & PRICE</a>
+                                    
+                            </div>
+
+                        </div>
+                    
+                    </div>
+                
+                </div>
+        
+        </div>
+
+    </main>
 
 </body>
+
 </html>
